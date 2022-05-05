@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0" styleClass="panelParent" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edmi.controller.DashboardController">
+   <left>
+          <VBox prefHeight="680.0" prefWidth="95.0" styleClass="panelMenu" BorderPane.alignment="CENTER">
+              <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="70.0" prefWidth="100.0" styleClass="panelMenu" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="81.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/expand.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+                  <Button fx:id="menuConfig" contentDisplay="TOP" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="buttonWindow" text="Home" textFill="#00a6ff">
+                      <graphic>
+                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/config.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                  </Button>
+                  <Button fx:id="menuData" contentDisplay="TOP" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="buttonWindow" text="Create" textFill="#00a6ff">
+                      <graphic>
+                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/block.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                  </Button>
+                  <Button fx:id="menuFile" contentDisplay="TOP" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="buttonWindow" text="Files" textFill="#00a6ff">
+                      <graphic>
+                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/folder.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                  </Button>
+            <Button fx:id="menuFile1" contentDisplay="TOP" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="buttonWindow" text="Out" textFill="#00a6ff">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+              </children>
+          </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="905.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" text="+">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btnInformation" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

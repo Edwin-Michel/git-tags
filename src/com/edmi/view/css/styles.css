@@ -1,0 +1,58 @@
+*{
+    -fx-background-color: #495371;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+}
+
+TextField{
+    -fx-background-radius: 50;
+    -fx-padding: 8 20;
+}
+
+TextArea{
+    -fx-padding: 20;
+}
+
+Button, MenuButton{
+    -fx-cursor: HAND;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Buttons                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+.btn{
+    -fx-border-width: 0;
+}
+
+.btn:hover{
+    -fx-border-width: 0;
+    -fx-opacity: 0.9;
+}
+
+.btnInformation{
+    -fx-text-fill: #fff;
+    -fx-background-color: #4D96FF;
+}
+
+/**********************************************************/
+.buttonWindow {
+    -fx-background-color : #141124;
+    -fx-background-radius : 0 0 0 0;
+}
+.buttonWindow:hover {
+    -fx-background-color : #524A7B ;
+}
+.buttonWindow:pressed {
+    -fx-background-color : #2F2B43 ;
+}
+
+.panelMenu {
+    -fx-background-color : #141124;
+    /*-fx-background-radius :  50;*/
+}
+
+.panelData {
+    -fx-background-color: linear-gradient(to bottom left, #4C3F91, #5584AC);
+}

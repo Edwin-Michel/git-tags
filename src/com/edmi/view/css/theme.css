@@ -1,0 +1,108 @@
+/*******************************************************************************
+ *                                                                             *
+ * Color Theme : DEFAULT                                                       *
+ *                                                                             *
+ ******************************************************************************/
+*{
+    /*-fx-background-color: #495371;*/
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+}
+
+.panelContent{
+    /*-fx-background-color: #EEF2FF;*/
+    -fx-background-color: #DADDFC;
+}
+
+TextField{
+    -fx-background-radius: 50;
+    -fx-padding: 8 20;
+}
+
+TextArea{
+    -fx-padding: 20;
+}
+
+Button, MenuButton{
+    -fx-cursor: HAND;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Buttons                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+.btn{
+    -fx-border-width: 0;
+    -fx-background-radius: 30;
+    -fx-padding: 10 30;
+}
+
+.btn:hover{
+    -fx-border-width: 0;
+    -fx-opacity: 0.9;
+}
+
+.btnPrimary{
+    -fx-text-fill: #fff;
+    -fx-background-color: #008E89;
+}
+
+.btnInformation{
+    -fx-text-fill: #fff;
+    -fx-background-color: #8843F2;
+}
+
+.btnDanger{
+    -fx-text-fill: #fff;
+    -fx-background-color: #FF5959;
+}
+
+.btnDark{
+    -fx-text-fill: white;
+    -fx-background-color : #141124;
+}
+
+.btnLight{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+
+/******************************************************************/
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 150px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab:hover{
+    -fx-cursor: HAND;
+}
+
+.tab-pane .tab{
+    -fx-background-color: #524A7B;
+}
+
+.tab-pane .tab:selected{
+    /*#585bb4;*/
+    -fx-background-color: #0773d8;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+}
